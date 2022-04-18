@@ -15,3 +15,4 @@ local host with correct port and you can see your transactions in Ganache
 *also be sure to put the Attack.sol contents directly under the ReEntrancy.sol contents when doing testing,
 the files aren't deployed to an actual network so I dont think you can import them correctly
 
+might be able to use digitalocean to install truffle/ganache to host the blockchain!
